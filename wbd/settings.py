@@ -25,7 +25,7 @@ SECRET_KEY = '!!!USE-VALUE-FROM-LOCAL-SETTINGS!!!'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['!!!USE-VALUE-FROM-LOCAL-SETTINGS!!!',]
 
 
 # Application definition
@@ -168,6 +168,6 @@ REST_FRAMEWORK = {
 }
 
 try:
-    from local_settings import *
+    from .local_settings import *
 except ImportError:
     pass
