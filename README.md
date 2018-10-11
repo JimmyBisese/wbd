@@ -1,6 +1,13 @@
 ## Synopsis
 
-AAA At the top of the file there should be a short introduction and/ or overview that explains **what** the project is. This description should match descriptions added for package managers (Gemspec, package.json, etc.)
+NOT READY FOR REUSE.  THIS IS A TRAINING EXERCISE ONLY.
+
+Python Django Rest Framework API implementation 
+of the Hydrologic Unit Code (HUC) and Watershed Boundary Dataset.  Provides a
+complete API to navigate the HUC/WBD dataset(s) in JSON and XML formats.
+
+Two sample clients are also included. 'Chart' provides a D3js implementation of 
+a WBD browser. 'Map' provides a map-based implementation of a WBD navigation too. 
 
 ## Code Example
 
