@@ -20,10 +20,10 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'h9%1nbw#)xl(1(t@-0yyn#f*wym=_hy8et9pz8xofkgyw0#u-i'
+SECRET_KEY = '!!!USE-VALUE-FROM-LOCAL-SETTINGS!!!'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = []
 
@@ -167,3 +167,7 @@ REST_FRAMEWORK = {
     'PAGE_SIZE': 10
 }
 
+try:
+    from local_settings import *
+except ImportError:
+    pass
