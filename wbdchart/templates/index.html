@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link type="text/css" rel="stylesheet" href="{% static 'wbdchart/css/style.css' %}" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.9/css/jquery.dataTables.min.css">
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://cdn.datatables.net/1.10.9/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="https://d3js.org/d3.v3.min.js"></script>
+<script type="text/javascript" src="{% static 'wbdchart/js/d3.layout.js' %}"></script>
+<style type="text/css">
+.node circle {
+	cursor: pointer;
+	fill: #fff;
+	stroke: steelblue;
+	stroke-width: 1.5px;
+}
+
+.node text {
+	font-size: 11px;
+	background-color: yellow;
+}
+
+path.link {
+	fill: none;
+	stroke: #ccc;
+	stroke-width: 1.5px;
+}
+</style>
+</head>
+<body>
+	<div style="overflow: scroll;"id="body">
+		<div style="position: absolute; top: 20px; left: 20px;">
+			<select id="navigation_direction">
+			  <option value="upstream">Upstream</option>
+			  <option value="downstream" selected="selected">Downstream</option>
+			</select>
+		</div>
+		<div id="footer">
+		</div>
+		
+	</div>
+	<script type="text/javascript" src="{% static 'wbdchart/js/wbd_chart.js' %}"></script>
+	<script type="text/javascript" src="{% static 'wbdchart/js/makeTable.js' %}"></script>
+</body>
+</html>
